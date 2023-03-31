@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="false"
+	scanPeriod="60 seconds">
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>DEV %d %-5level %-40logger{5} %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="_org" level="info" />
+	<logger name="org" level="info" />
+	
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>
